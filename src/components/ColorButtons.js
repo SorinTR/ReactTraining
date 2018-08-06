@@ -6,7 +6,6 @@ export default class ColorButtons extends Component {
 		bgColorRed: [],
 		bgColorBlue: [],
 		bgColorBlack: [],
-		text: ''
 	};
 
 	onClickRed = () => {
@@ -23,17 +22,19 @@ export default class ColorButtons extends Component {
 
 	render() {
 		return (
-			<div>
-				<button onClick={this.onClickRed} style={{ backgroundColor: this.state.bgColorRed }}>
+      <div>
+        <button type="button" onClick={this.onClickRed} style={{ backgroundColor: this.state.bgColorRed }}>
 					Red
 				</button>
-				<button onClick={this.onClickBlue} style={{ backgroundColor: this.state.bgColorBlue }}>
+				<button type="button" onClick={this.onClickBlue} style={{ backgroundColor: this.state.bgColorBlue }}>
 					Blue
 				</button>
-				<button onClick={this.onClickBlack} style={{ backgroundColor: this.state.bgColorBlack }}>
+				<button type="button" onClick={this.onClickBlack} style={{ backgroundColor: this.state.bgColorBlack }}>
 					Black
 				</button>
-				<h1>{this.state.color}</h1>
+        <h1>
+          {this.state.color}
+				</h1>
 			</div>
 		);
 	}

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import './App.css';
 import ColorButtons from './components/ColorButtons';
-import Footer from './components/Footer';
+import Footer from './components/Footer";
 class App extends Component {
 	render() {
 		return (
